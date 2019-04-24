@@ -5,7 +5,7 @@ Utility scripts to compare commits from two branch based on a regex.
 scripts/gitcompare.sh <branch1> <branch2>
 
 ### Output files
-missing-jiras.csv  : Missing jiras based on regex. Format (<regex output>,<commit hash>,<commit subject>) 
+missing-jiras.csv  : Missing jiras based on regex. Format <regex output>,<commit hash>,<commit subject> 
 reverted-jiras.csv : Jiras with "Reverted" match in subject.
   
 ## Commit missing hash
