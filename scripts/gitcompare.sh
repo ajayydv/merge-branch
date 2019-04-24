@@ -4,8 +4,8 @@ if ((2==$#)); then
   b=$2
   alog=$(echo $a | tr '/' '-').log
   blog=$(echo $b | tr '/' '-').log
-  git log --oneline --pretty=format:%H,%s $a > $alog
-  git log --oneline --pretty=format:%H,%s $b > $blog
+  git log --oneline --pretty=format:%H,%s --date-order --date-order --reverse  $a > $alog
+  git log --oneline --pretty=format:%H,%s --date-order --date-order --reverse  $b > $blog
   regex='(HADOOP|HDFS)-[[:digit:]]*'
   jira=""
 
