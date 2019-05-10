@@ -9,7 +9,8 @@ if ((2==$#)); then
   regex='(HADOOP|HDFS)-[[:digit:]]*'
   jira=""
 
-  while IFS= read -r line
+  IFS=''
+  while read line
   do
    echo "$line"
    if [[ $line =~ $regex ]]; then  jira=${BASH_REMATCH}; fi
